@@ -233,7 +233,9 @@
         </div>
       </div>
     </section>
+         
 
+          <!--ends part cl tming-->
     <!-- Aside (Call History) -->
     <aside class="w-[300px] bg-white shadow-md p-4 rounded-lg">
       <h2 class="text-lg font-bold mb-3"> Call History</h2>
@@ -474,11 +476,15 @@
     coins -= 20;
     coinCount.textContent = coins;
 
+
+
     // call history
     const li = document.createElement("li");
     li.textContent = `${service} (${number})`;
     historyList.appendChild(li);
   }
+
+  
 
   //  coins copy
   copyBtn.addEventListener("click", function()  {
@@ -486,6 +492,20 @@
       alert(`Copied ${coins} coins to clipboard!`);
     });
   });
+  
+// // calldate nw
+// // Get current call time
+//         const now = new Date();
+//         const callTime = now.toLocaleTimeString();
+
+//         // Add to Call History
+//         const li = document.createElement("li");
+//         li.textContent = `${service} - ${number} ⏰ ${callTime}`;
+//         document.getElementById("callHistory").appendChild(li);
+//        });
+// )}
+  // ends date part
+
 
   // Clear history
   clearHistory.addEventListener("click", function ()  {
@@ -494,6 +514,7 @@
 
 // ---
 // extra
+
 
   // // Attach to each call button in cards
   // document.querySelectorAll(".card-call-btn").forEach(btn => {
@@ -505,7 +526,7 @@
   // }); 
 
 
-  // extra3
+  // extra2
    
 
       // -----------------
@@ -515,7 +536,24 @@
     const number = e.target.dataset.number;
     makeCall(service, number);
   }
+  
+  
 });
+// // call time
+// // Get current call time
+// const now = new Date();
+// const callTime = now.toLocaleTimeString(); // Example: 8:15:23 PM
+// // If you also want the date + time together:
+
+// // javascript
+// // Copy code
+// const now = new Date();{
+// const callTime = now.toLocaleString();
+//   });
+//   // });
+// call timesends
+// copy do
+
 
 
 </script>
