@@ -22,6 +22,12 @@ Question1: What is the difference between **getElementById, getElementsByClassNa
 -The event continues to  bubble,until it raches the top(the document element)
 ---------------------------------------------------------------------------------------------------------------------------------------------<br/>
 #Question4: What is **Event Delegation** in JavaScript? Why is it useful? <br/>
-
-#Question5: What is the difference between **preventDefault() and stopPropagation()** methods?
+#Answer: The delegate method attaches one or more event handlers for  specified elements that are children of selected elements, and specifies a function to run when the events occur.<br/>
+Event Delegates are useful because they improve performance and simply code by allowing a single event listener to manage events for multiple elements,including dynamically added ones.<br/>
+---------------------------------------------------------------------------------------------------------------------------------------------------------------<br/>
+#Question5: What is the difference between **preventDefault() and stopPropagation()** methods? <br/>
+ #Answer: preventDefault() and stopPropagation() are distinct methods used in JavaScript event handling to control the behaviour of events in the DOM.<br/>
+ -preventDefault() controls the default browser action of an event, while stopPropagation() controls propagation(flow) of an event through the DOM.<br/>
+ -These methods can be used independently or together, depending on the desired event handling behaviour. For instance, one might want to prevent a link's default  navigation and stop<br/> the click event from bubbling up to its parent container.
+ 
 
